@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"
+<html lang="ru"></html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheets" href="normalize.css">
@@ -8,7 +8,8 @@
 </head>
 <body>
   <header>
-      <ul class="navigation">
+      <nav class="navigation">
+        <ul >
           <li>
               <a>информация</a>
           </li>
@@ -24,13 +25,12 @@
           <li>
               <a>контакты</a>
           </li>
-          <li >
-            <a>вход</a>
-        </li> 
-      </ul>   
+        </ul>
+        <a>вход</a>
+      </nav> 
   </header>
   <div class="logo">
-      <img src="" alt="логотип Barbershop" 
+      <img src="" alt="логотип Barbershop"> 
   </div>
   <section class="advantages">
     <ul class="advantages-headline">
@@ -44,10 +44,89 @@
       <li>наши мастера - профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определенный статус?</li>
     </ul>
   </section>
-  <section class="news">
-      <h2>Новости</h2>
-      
-
+  <section>
+      <h2 class="section-header">Новости</h2>
+      <p class="info">Нам наконец завезли ягермастер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+      <p type="date" class="news-date">11 января</p>
+      <p class="info">В нашей команде пополнение Борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+      <p type="date" class="news-date">19 января</p>
+      <button type="button" class="button">все новости</button>
   </section>
+  <section>
+      <h2 class="section-header">фотогалерея</h2>
+      <img src=>
+      <button type="button" class="button">назад</button>
+      <button type="button" class="button">вперед</button>
+  </section>
+  <section>
+      <h2 class="section-header">контактная информация</h2>
+      <div class="info">
+        <p class="info">барбершоп "бородинский"</p>
+        <p class="info">адрес: г. санкт-петербург, ул. конюшенная, д. 19/8</p>
+        <p class="info">телефон:+7(495)666 02 66</p>
+      </div>
+      <div class="info">
+          <p>время работы</p>
+          <p>пн-пт: с 10:00 до 22:00 </p>
+          <p>сб-вс: с 10:00 до 19:00 </p>
+      </div>
+      <button type="button" class="button">как проехать</button>
+      <button type="button" class="button">обратная связь</button>
+  </section>
+  <section>
+      <h2 class="section-header">записаться</h2>
+      <p class="info">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+      <form class="reservation-form">
+        <p>
+          <label for="choose-date">дата </label>
+          <input id="choose-date" type="date" name="date" placeholder="дата">08.10.2017
+        </p>
+        <p>
+           <label for="choose-time">время</label>
+           <input id="choose-time" type="time" name="time" placeholder="время" time="10:00">10.00   <!--???-->
+        </p>
+        <div>
+            <label for="client-name">ваше имя</label>
+            <input id="client-name" type="text" name="client-name" placeholder="борода">
+        </div>
+        <p>
+            <label for="telephone-number">телефон</label>
+            <input id="telephone-number" type="tel" name="telephone" placeholder="+7 123 456-78-90">+7 123 456-78-90
+        </p>
+        <button type="submit" class="button">отправить</button>  <!--можно/нужно ли вынести button за пределы формы?-->
+      </form>
+  </section>
+  <footer class="footer">
+      <div class="contacts">
+          <p>барбершоп "бородинский"</p>
+          <p>адрес: г. санкт-петербург, ул. конюшенная, д. 19/8</p>
+          <a href="" alt="наше месторасположение">как нас найти</a>
+          <p>телефон:+7(495)666 02 66</p>
+      </div>
+      <div>
+          <p class="contacts">давайте дружить!</p>
+          <ul class="social-contacts">
+             <li> 
+                <a href="">
+                  <img src=" " alt="вконтакте">
+                </a> 
+             </li>
+             <li>
+                <a href="">
+                  <img src=" " alt="фейсбук">
+                </a>
+             </li>
+             <li>
+                 <a href="">
+                     <img src=" " alt="инстаграм">
+                 </a>
+             </li>
+          </ul>
+      </div>
+      <div>
+          <p class="contacts">разработано:</p>
+          <button type="button" class="button">html academy</button>
+      </div>
+  </footer>
 
 </body>
