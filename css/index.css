@@ -1,5 +1,26 @@
-ul.navigation
+@font-face{
+    font-family: ptsans;
+    src: url(fonts/web/ptsansnarrow.woff) format(woff),
+         url(fonts/web/ptsansnarrow.woff2) format(woff2);
+
+}
+body
+{
+background-color: rgb(43, 40, 40);
+background-image: url();
+
+}
+.navigation
 {
 list-style: none;
+text-transform:uppercase ;
+color: white;
+background-color:black ;
+}
 
+
+
+
+.navigation-enter li::before{
+    content: image url();
 }

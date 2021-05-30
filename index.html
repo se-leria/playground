@@ -7,26 +7,31 @@
     <title>Barbershop</title>
 </head>
 <body>
-  <header>
-      <nav class="navigation">
-        <ul >
-          <li>
+  <header class="header main-header">
+      <nav class="navigation main-navigation">
+        <ul class="navigation" >
+          <li class="nav-item">
               <a>информация</a>
           </li>
-          <li>
+          <li class="nav-item">
               <a>новости</a>
           </li>
-          <li>
+          <li class="nav-item">
               <a href="price-list.html">прайс-лист</a>
           </li>
-          <li>
+          <li class="nav-item">
               <a>магазин</a>
           </li>
-          <li>
+          <li class="nav-item">
               <a>контакты</a>
           </li>
         </ul>
-        <a>вход</a>
+        <ul class="navigation-enter">
+          <li class="nav-item">
+              <!--::before-->
+            <a class="nav-enter-item">вход</a>
+          </li>
+        </ul>
       </nav> 
   </header>
   <div class="logo">
@@ -39,7 +44,7 @@
         <li>круто</li>
         <li>дорого</li>
     </ul>
-    <ul>
+    <ul class="advantages-description">
       <li>Мы делаем свою работу быстро! два часа пролеят незаметно и вы - счастливый обладатель стильной стрижки-минутки! </li>
       <li>Забудьте как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне.</li>
       <li>наши мастера - профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определенный статус?</li>
@@ -52,13 +57,13 @@
       <p type="date" class="news-date">11 января</p>
       <p class="info">В нашей команде пополнение Борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
       <p type="date" class="news-date">19 января</p>
-      <button type="button" class="button">все новости</button>
+      <button type="button" class="button button-allnews">все новости</button>
     </section>
     <section>
       <h2 class="section-header">фотогалерея</h2>
-      <img src=>
-      <button type="button" class="button">назад</button>
-      <button type="button" class="button">вперед</button>
+      <img src="" alt="интерьер" >
+      <button type="button" class="button button-back">назад</button>
+      <button type="button" class="button button-forward">вперед</button>
     </section>
   </div>
   <div class="block">
@@ -74,8 +79,8 @@
           <p>пн-пт: с 10:00 до 22:00 </p>
           <p>сб-вс: с 10:00 до 19:00 </p>
       </div>
-      <button type="button" class="button">как проехать</button>
-      <button type="button" class="button">обратная связь</button>
+      <button type="button" class="button button-map">как проехать</button>
+      <button type="button" class="button button-contacts">обратная связь</button>
     </section>
     <section>
       <h2 class="section-header">записаться</h2>
@@ -83,7 +88,7 @@
       <form class="reservation-form">
         <p>
           <label for="choose-date">дата </label>
-          <input id="choose-date" type="date" name="date" placeholder="дата">08.10.2017
+          <input id="choose-date" type="date" name="date" placeholder="дата">
         </p>
         <p>
            <label for="choose-time">время</label>
@@ -112,17 +117,17 @@
           <p class="contacts">давайте дружить!</p>
           <ul class="social-contacts">
              <li> 
-                <a href="">
+                <a class="button button-vk">
                   <img src="svg/vk.svg " alt="вконтакте">
                 </a> 
              </li>
              <li>
-                <a href="">
+                <a class="button button-fb">
                   <img src="svg/facebook.svg" alt="фейсбук">
                 </a>
              </li>
              <li>
-                 <a href="">
+                 <a class="button button-instagram">
                      <img src="svg/instagram.svg" alt="инстаграм">
                  </a>
              </li>
